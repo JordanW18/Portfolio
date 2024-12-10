@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PERSONAL PORTFOLIO WEBSITE!!!</title>
+
+  <!--Eczar font from Google's font collection-->
+  <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;700&display=swap" rel="stylesheet">
+  <!--The Bootstrap CSS link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--The Bookstrap Icons link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!---Style sheet-->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #333;
+      color: white;
+      scroll-behavior: smooth;
+    }
+    .sticky-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #444;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .nav-link {
+      font-family: 'Eczar', serif;
+      color: white !important;
+    }
+    .nav-link.active {
+      background-color: purple !important;
+    }
+    section {
+      padding: 60px 0;
+    }
+    section h2 {
+      font-family: 'Eczar', serif;
+      border-bottom: 2px solid white;
+      margin-bottom: 20px;
+    }
+    .card {
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+    }
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .experience-item {
+      margin-bottom: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #444;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!---Sticky header navigation links so that when you click one of them it goes to the appropriate section-->
+  <div class="sticky-header">
+    <div class="container">
+      <ul class="nav nav-pills justify-content-center py-3">
+        <li class="nav-item"><a href="#Home" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#Current Projects" class="nav-link">Current Projects</a></li>
+        <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#Experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!--Section #1: Home (Using a Boostrap snippet)-->
+<section id="Home" style="padding-top: 120px; padding-bottom: 0;">
+  <div class="container">
+    <div class="row align-items-center featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1" style="border-bottom: none;">Welcome To My Website! <span class="text-body-secondary"></span></h2>
+        <p class="lead">Hello, I'm Jordan Walsingham, an IT professional with years of experience, primarily focused on hardware and software support.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="https://pbs.twimg.com/profile_images/1216042528027357185/R4Y7uXea_400x400.jpg" alt="My profile picture from the internet" class="img-fluid rounded" style="max-width: 100%; height: auto; width: 300px; margin-top: -20px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!--Section #2: About-->
+    <section id="About">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Based in Pittsburg, Kansas, I'm a seasoned help desk technician with a Computer Science degree since 2025. 
+          With a solid background dating back to 2010, I’ve immersed myself in the technology field, gaining experience 
+          from my internship at Watco within their IT Services department. This experience sharpened my technical skills 
+          and deepened my understanding of technology.
+        </p>
+        <p>
+          Before that, I spent four years in the restaurant and catering industry, honing my communication, multitasking, 
+          and problem-solving abilities. I am a highly motivated and curious individual who thrives on learning and tackling 
+          challenges head-on. Whether troubleshooting complex systems or building something new, I enjoy pushing the 
+          boundaries of my knowledge to grow and innovate.
+        </p>
+      </div>
+    </section>
+
+    <!--Section #3: Current Projects (Using a Bootstrap snippet)-->
+    <section id="Current Projects">
+      <div class="container">
+        <h2>Current Projects</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card text-white position-relative" style="background-image: url('https://media.licdn.com/dms/image/D4D12AQGLxe6MDUj9SQ/article-cover_image-shrink_720_1280/0/1696333828476?e=2147483647&v=beta&t=9lIl5cMeTdNeprH8MfRSB5alJdSdrT6Up3Hefl6-PQI');">
+              <div class="text-overlay">
+                <h3>Portfolio Website</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-white position-relative" style="background-image: url('https://images.yourstory.com/cs/1/b3cc3444ab5e11e88691f70342131e20/Whatissoftwareandtypesofsoftwarewithexamples1575272423828jpg?mode=crop&crop=faces&ar=16%3A9&format=auto&w=1920&q=75');">
+              <div class="text-overlay">
+                <h3>D&D Program</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-white position-relative" style="background-image: url('https://lh3.googleusercontent.com/5thoi1lPg2Q6L1pcjDhGiKQv9qeBeklOJoKqhVq2L3Zr6Qs4_vHkFVdCr6Xw6_HriibQ3gGsMG0WDrLpFnYDGvj7gIZVCZyuSNrv29Wztot6dlYr_7eOs7aBcNt2tkEeix4HEgEWR6EOw2Eev9_evQ');">
+              <div class="text-overlay">
+                <h3>Health Tracker</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section #4: Skills (Using a Boostrap snippet)-->
+    <section id="Skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="row row-cols-2 row-cols-md-4 g-4 text-center">
+          <div class="col">
+            <i class="bi bi-cpu-fill" style="font-size: 2rem; margin-bottom: 10px;"></i>
+            <h3>HTML</h3>
+            <p>Creating & designing websites.</p>
+          </div>
+          <div class="col">
+            <i class="bi bi-speedometer2" style="font-size: 2rem; margin-bottom: 10px;"></i>
+            <h3>Python</h3>
+            <p>Programming little projects to do basic task.</p>
+          </div>
+          <div class="col">
+            <i class="bi bi-toggles2" style="font-size: 2rem; margin-bottom: 10px;"></i>
+            <h3>Hardware</h3>
+            <p>Building computers and troubleshooting hardware.</p>
+          </div>
+          <div class="col">
+            <i class="bi bi-tools" style="font-size: 2rem; margin-bottom: 10px;"></i>
+            <h3>Problem Solving</h3>
+            <p>Critical thinking and creative solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section #5: Experience-->
+    <section id="Experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <ul>
+          <li class="experience-item">IT Intern at Watco: Worked for Watco IT for over 2 years learning how to troubleshoot and work with computer hardware, support customers and other team members with tech-related issues, set up new workstations, and work sites.</li>
+          <li class="experience-item">Concessions Manager at Sodexo: Worked for Sodexo as the acting manager for over 4 years learning how to work with all different types of people, manage large amounts of money, ensure events went smoothly, follow food safety regulations, and assist customers with issues.</li>
+          <li class="experience-item">Backline Cook at The Mall Deli: Worked for the Mall Deli for over 3 years learning how to perform in a highly stressful environment with people of all different personalities whilst following food safety guidelines and working with dangerous kitchen equipment.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Section #6:Contact-->
+    <section id="Contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <ul>
+          <li>Email: jordanthedoctor@gmail.com</li>
+          <li>Phone Number: 620 - 687 - 0281</li>
+          <li>Mailing Address: 315 W. 3rd Street</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--End of page buffer so the navigation sticky header doesn't break and still activates on the contact section-->
+    <div style="height: 200px;"></div>
+  </main>
+
+  <!--A basic footer where I can update when the page was last updated-->
+  <footer>
+    <p>Last updated: 12/10/2024</p>
+  </footer>
+
+  <!--JavaScript-->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('section');
+      const headerHeight = document.querySelector('.sticky-header').offsetHeight;
+
+      <!--Smooth scrolling function to get the header to stop just above the sections when clicking on a new section-->
+      navLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          const scrollPosition = targetElement.offsetTop - headerHeight;
+          window.scrollTo({
+            top: scrollPosition,
+            behavior: 'smooth',
+          });
+        });
+      });
+
+      <!--Highlighting function so that when the header elements are clicked they then highlight purple-->
+      window.addEventListener('scroll', () => {
+        let currentSection = '';
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - headerHeight - 10;
+          const sectionHeight = section.offsetHeight;
+
+          if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href').substring(1) === currentSection) {
+            link.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
